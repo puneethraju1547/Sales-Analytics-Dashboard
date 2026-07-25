@@ -1,20 +1,20 @@
 # Sales Analytics Dashboard
 
-This project is a simple end-to-end sales analytics project built using SQL Server and Microsoft Power BI.
+This project is a complete sales analytics solution built using SQL Server and Power BI. The goal was to understand how raw business data is transformed into meaningful insights through SQL analysis and interactive dashboards.
 
-The main goal of this project is to analyze sales data, identify useful business insights, and present the results through an interactive Power BI dashboard. It covers the complete analytics workflow, starting from data validation and cleaning to SQL analysis and dashboard creation.
+I built this project to strengthen my SQL and Power BI skills by working on a complete sales analysis workflow. Instead of solving isolated SQL problems, I wanted to experience how data is validated, cleaned, analyzed, and finally visualized in a business dashboard.
 
 ---
 
 ## Project Objective
 
-Businesses generate a large amount of sales data every day. The objective of this project is to explore that data and answer common business questions such as:
+The objective of this project is to analyze sales data and answer common business questions such as:
 
 - Which products generate the highest sales?
-- Which categories are the most profitable?
+- Which product categories are the most profitable?
 - Which regions perform better than others?
 - How do sales change over time?
-- Which customers contribute the most revenue?
+- Which customers contribute the highest revenue?
 
 ---
 
@@ -30,38 +30,74 @@ Businesses generate a large amount of sales data every day. The objective of thi
 
 ## Dataset
 
-The project uses the Sample Superstore dataset, which contains information about:
+- Sample Superstore Dataset
 
-- Orders
-- Customers
-- Products
-- Sales
-- Profit
-- Discounts
-- Shipping
-- Regions
+The dataset contains information about customer orders, sales, profit, discounts, shipping details, products, and regions.
+
+---
+
+## Project Workflow
+
+### 1. Data Validation
+- Checked total records and columns
+- Verified missing values
+- Checked duplicate records
+- Validated data types
+- Reviewed date ranges and categories
+
+### 2. Data Cleaning
+- Handled missing values
+- Verified data consistency
+- Prepared the dataset for analysis
+
+### 3. Exploratory Data Analysis (EDA)
+- Sales by Category
+- Sales by Region
+- Sales by Segment
+- Monthly Sales Trend
+- Top Products
+- Customer Analysis
+
+### 4. Business Analysis
+- Top Performing Products
+- Most Profitable Categories
+- Regional Performance
+- Customer Revenue Analysis
+- Profit Margin Analysis
+
+### 5. Power BI Dashboard
+The final dashboard provides an interactive overview of:
+
+- Total Sales
+- Total Profit
+- Profit Margin
+- Sales Trend
+- Category Performance
+- Regional Analysis
+- Customer Insights
 
 ---
 
 ## Project Structure
 
 ```
-Sales-Analytics-Dashboard
+Sales-Analytics-Dashboard/
 │
-├── Dataset
+├── Dataset/
 │   └── Superstore.csv
 │
-├── SQL
+├── SQL/
 │   ├── 01_Data_Validation.sql
 │   ├── 02_Data_Cleaning.sql
 │   ├── 03_EDA.sql
 │   ├── 04_Business_Analysis.sql
 │   └── 05_Advanced_SQL.sql
 │
-├── PowerBI
+├── PowerBI/
 │   └── SalesAnalyticsDashboard.pbix
 │
-├── Images
+├── Images/
+│   └── SalesAnalyticsDashboard.png
 │
 ├── README.md
 └── LICENSE
@@ -69,79 +105,50 @@ Sales-Analytics-Dashboard
 
 ---
 
-## SQL Work
+## Dashboard Preview
 
-The SQL part of the project is divided into five sections.
+> Dashboard screenshot
 
-### 1. Data Validation
-- Checked missing values
-- Checked duplicate records
-- Verified data quality
+![Sales Dashboard](Images/SalesAnalyticsDashboard.png)
 
-### 2. Data Cleaning
-- Cleaned inconsistent data
-- Reviewed missing values
-- Prepared data for analysis
+---
 
-### 3. Exploratory Data Analysis
-- Sales by category
-- Sales by region
-- Customer analysis
-- Product analysis
+## SQL Concepts Used
 
-### 4. Business Analysis
-- Top selling products
-- Most profitable products
-- Regional performance
-- Customer insights
-
-### 5. Advanced SQL
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- HAVING
+- Aggregate Functions
+- CASE Statements
+- Date Functions
+- Common Table Expressions (CTEs)
 - Window Functions
-- CTEs
-- Ranking Functions
-- Aggregate Analysis
+- Joins
+- Subqueries
 
 ---
 
-## Dashboard
+## Key Learnings
 
-The Power BI dashboard includes:
+Through this project I gained practical experience in:
 
-- Total Sales
-- Total Profit
-- Profit Margin
-- Sales Trend
-- Category Analysis
-- Region Analysis
-- Customer Performance
-- Product Performance
-
-A dashboard screenshot will be added after completing the project.
-
----
-
-## What I Learned
-
-Working on this project helped me improve my understanding of:
-
-- SQL queries
-- Data cleaning
-- Data analysis
-- Power BI dashboard design
-- Git and GitHub
-- Presenting business insights using data
+- Writing business-focused SQL queries
+- Cleaning and validating datasets
+- Performing exploratory data analysis
+- Designing interactive Power BI dashboards
+- Organizing projects using Git and GitHub
 
 ---
 
 ## Future Improvements
 
-Some improvements I plan to make in the future include:
-
-- More advanced SQL queries
-- Additional KPI cards
-- Better dashboard design
-- DAX calculations in Power BI
-- Performance optimization
+- Add more advanced SQL queries
+- Build additional Power BI pages
+- Include DAX calculations
+- Add Row-Level Security (RLS)
+- Connect to a live SQL Server database
 
 ---
 
@@ -151,4 +158,8 @@ Some improvements I plan to make in the future include:
 
 GitHub: https://github.com/puneethraju1547
 
-LinkedIn: https://www.linkedin.com/in/konduru-poornendra-varma-52436b2b5
+---
+
+## License
+
+This project is licensed under the MIT License.
